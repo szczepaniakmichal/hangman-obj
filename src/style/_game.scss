@@ -4,9 +4,34 @@ body {
   padding: 0;
 
   .game-container {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+
+    }
+
     &__password {
-      height: 100px;
       background-color: silver;
     }
+
+    &__category {
+
+    }
+
+    &__keyboard {
+      display: grid;
+      grid-template-columns: repeat(13, 1fr);
+      grid-gap: 15px;
+
+      .letterBtn {
+        padding: 10px;
+      }
+    }
+
+
   }
 }
